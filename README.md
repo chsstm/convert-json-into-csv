@@ -7,7 +7,9 @@ It is a npm package with a function which receives a `JSON` object as a paramete
 :white_check_mark: &nbsp;&nbsp; Custom text **delimiter** and text **separator** :boom:
 
 ## Setup process
-1. Run **npm install convert-json-into-csv** 
+```javascript
+npm install convert-json-into-csv
+```
 
 ## Function Parameters
 1. **JSON object [Object:Required]** :- a JSON object which you want to convert to csv.
