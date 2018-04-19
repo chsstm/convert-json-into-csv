@@ -3,7 +3,7 @@
 It is a npm package with a function which receives a `JSON` object as a parameter and returns a `CSV` data to show in tabular form.
 
 ## New Features
-:boom: Custom **key separator**.
+:boom: Custom **key separator**. <br/>
 :boom: Custom text **delimiter** and text **separator**.
 
 ## Setup process
