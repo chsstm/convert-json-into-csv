@@ -3,8 +3,8 @@
 It is a npm package with a function which receives a `JSON` object as a parameter and returns a `CSV` data to show in tabular form.
 
 ## New Features
-:boom: Custom **key separator**.
-:boom: Custom text **delimiter** and text **separator**.
+> :boom: Custom **key separator**.
+> :boom: Custom text **delimiter** and text **separator**.
 
 ## Setup process
 1. Run **npm install convert-json-into-csv** 
@@ -45,7 +45,9 @@ console.log(csv);
 ```
 
 #### CSV Tabular View:
-![CSV in tabluar view](https://raw.githubusercontent.com/chsstm/online-images/master/csv-table-view.png)
+name|company|profession|address_city|address_country
+____|_______|__________|____________|_______________
+Saimon Thada Magar|ChicMic, Mohali, India|Software Engineer|Khoptar -4, Rampur","Nepal
 
 #### Example 2 :
 ```javascript
