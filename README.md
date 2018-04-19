@@ -74,8 +74,7 @@ console.log(csv);
 #### Output (return value):
 ```
 'name'.'company'.'profession'.'address-city'.'address-country'.'hobbies'
-'Saimon Thada Magar'.'ChicMic, Mohali, India'.'Software Engineer'.'Khoptar -4, Rampur'.'Nepal'
-''.''.''.''.''.'Programming'
+'Saimon Thada Magar'.'ChicMic, Mohali, India'.'Software Engineer'.'Khoptar -4, Rampur'.'Nepal'.'Programming'
 ''.''.''.''.''.'Music'
 ''.''.''.''.''.'Sports'
 ```
@@ -83,10 +82,9 @@ console.log(csv);
 #### CSV Tabular View:
 name | company | profession | address_city | address_country | hobbies
 ---- | ------- | ---------- | ------------ | --------------- |------
-Saimon Thada Magar | ChicMic, Mohali, India | Software Engineer | Khoptar -4, Rampur | Nepal
-| | | | | | Programming
-| | | | | | Music
-| | | | | | Sports
+Saimon Thada Magar | ChicMic, Mohali, India | Software Engineer | Khoptar -4, Rampur | Nepal | Programming
+| | | | | Music
+| | | | | Sports
 
 
 ## Upcoming new Features 
