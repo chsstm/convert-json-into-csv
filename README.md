@@ -17,7 +17,7 @@ It is a npm package with a function which receives a `JSON` object as a paramete
 
 ## Use Method
 
-#### Code :
+#### Example 1 :
 ```javascript
 import JsonToCsv from 'convert-json-into-csv'; //ES6
 //OR
@@ -46,6 +46,33 @@ console.log(csv);
 
 #### CSV Tabular View:
 ![CSV in tabluar view](https://raw.githubusercontent.com/chsstm/online-images/master/csv-table-view.png)
+
+#### Example 2 :
+```javascript
+import JsonToCsv from 'convert-json-into-csv'; //ES6
+//OR
+const JsonToCsv = require('convert-json-into-csv'); //ES5
+
+let csv = ``;
+let json = {
+    name: 'Saimon Thada Magar',
+    company: 'ChicMic, Mohali, India',
+    profession: 'Software Engineer',
+    address: {
+        city: 'Khoptar -4, Rampur',
+        country: 'Nepal'
+    }
+}
+
+csv = JsonToCsv(json,'-',"'",'.');
+console.log(csv);
+```
+
+#### Output (return value):
+```
+'name'.'company'.'profession'.'address-city'.'address-country'
+'Saimon Thada Magar'.'ChicMic, Mohali, India'.'Software Engineer'.'Khoptar -4, Rampur'.'Nepal'
+```
 
 ## Upcoming new Features
 1. Custom column names instead of joined JSON keys.

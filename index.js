@@ -2,7 +2,7 @@ export default JSONintoCSV = (json,keySeparator = '_',delimiter = '"',valueSepar
     var plainData = {};
     var csv = ``;
 
-    plainData = parseInner(json,plainData);
+    plainData = parseInner(json,keySeparator,plainData);
 
     let rows = getRowLength(plainData);
     let cols = Object.keys(plainData).length;
@@ -38,7 +38,7 @@ function getRowLength(plainData){
     }
 }
 
-function parseInner(json,plainData,parentKey){
+function parseInner(json,keySeparator,plainData,parentKey){
     let newData = plainData;
     for(let key in json){
         if(typeof(json[key]) === 'object'){
@@ -49,7 +49,7 @@ function parseInner(json,plainData,parentKey){
             if(json[key].length > 0){
                 if(typeof(json[key][0]) === 'object'){
                     for(let arrayObj of json[key]){
-                        newData = parseInner(arrayObj,newData,newKey);
+                        newData = parseInner(arrayObj,keySeparator,newData,newKey);
                     }
                 }else{
                     for(let value of json[key]){
@@ -72,7 +72,7 @@ function parseInner(json,plainData,parentKey){
                     }
                 }
             }else{
-                newData = parseInner(json[key],newData,newKey);
+                newData = parseInner(json[key],keySeparator,newData,newKey);
             }
         }else{
             let value = json[key];
