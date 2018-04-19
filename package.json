@@ -12,5 +12,13 @@
     "csv from json"
   ],
   "author": "CHSSTM",
-  "license": "ISC"
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/chsstm/convert-json-into-csv.git"
+  },
+  "bugs": {
+    "url": "https://github.com/chsstm/convert-json-into-csv/issues"
+  },
+  "homepage": "https://github.com/chsstm/convert-json-into-csv#readme"
 }
