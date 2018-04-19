@@ -74,5 +74,5 @@ console.log(csv);
 'Saimon Thada Magar'.'ChicMic, Mohali, India'.'Software Engineer'.'Khoptar -4, Rampur'.'Nepal'
 ```
 
-## Upcoming new Features
-1. Custom column names instead of joined JSON keys.
+## Upcoming new Features 
+:soon: Custom column names instead of joined JSON keys.
