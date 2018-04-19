@@ -31,7 +31,7 @@ console.log(csv);
 ```
 
 ### CSV Tabular View:
-![CSV in tabluar view](https://github.com/chsstm/online-images/blob/master/normal-csv-table.png)
+![CSV in tabluar view](https://raw.githubusercontent.com/chsstm/online-images/master/normal-csv-table.png)
 
 ## Upcoming new Features
 1. User can select symbol for text **delimiter**.
