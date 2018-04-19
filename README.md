@@ -27,7 +27,11 @@ let csv = ``;
 let json = {
     name: 'Saimon Thada Magar',
     company: 'ChicMic, Mohali, India',
-    profession: 'Software Engineer'
+    profession: 'Software Engineer',
+    address: {
+        city: 'Khoptar -4, Rampur',
+        country: 'Nepal'
+    }
 }
 
 csv = JsonToCsv(json);
@@ -36,12 +40,12 @@ console.log(csv);
 
 #### Output (return value):
 ```
-"name","company","profession"
-"Saimon Thada Magar","ChicMic, Mohali, India","Software Engineer"
+"name","company","profession","address_city","address_country"
+"Saimon Thada Magar","ChicMic, Mohali, India","Software Engineer","Khoptar -4, Rampur","Nepal"
 ```
 
 #### CSV Tabular View:
-![CSV in tabluar view](https://raw.githubusercontent.com/chsstm/online-images/master/normal-csv-table.png)
+![CSV in tabluar view](https://raw.githubusercontent.com/chsstm/online-images/master/csv-table-view.png)
 
 ## Upcoming new Features
 1. Custom column names instead of joined JSON keys.
