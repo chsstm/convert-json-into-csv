@@ -63,7 +63,7 @@ let json = {
     address: {
         city: 'Khoptar -4, Rampur',
         country: 'Nepal'
-    }
+    },
     hobbies: ['Programming','Music','Sports']
 }
 
