@@ -1,6 +1,6 @@
 {
   "name": "convert-json-into-csv",
-  "version": "1.1.8",
+  "version": "1.1.9",
   "description": "This is a npm package to convert JSON object format to CSV format with dynamic keys from the JSON object. You do not need to define the CSV format to convert.",
   "main": "index.js",
   "scripts": {
