@@ -1,13 +1,13 @@
-### Convert JSON into CSV
+## Convert JSON into CSV
 
 It is a npm package with a function which receives a `JSON` object as a parameter and returns a `CSV` data to show in tabular form.
 
-### Setup process
+## Setup process
 1. Run **npm install convert-json-into-csv** 
 
-### Use of method
+## Use Method
 
-#### Code
+#### Code :
 ```javascript
 import JsonToCsv from 'convert-json-into-csv'; //ES6
 //OR
@@ -30,6 +30,9 @@ console.log(csv);
 "Saimon Thada Magar","ChicMic, Mohali, India","Software Engineer"
 ```
 
-### Upcoming new Features
+### CSV Tabular View:
+![CSV in tabluar view](https://github.com/chsstm/online-images/blob/master/normal-csv-table.png)
+
+## Upcoming new Features
 1. User can select symbol for text **delimiter**.
 2. User can select symbol for text **separation**.
