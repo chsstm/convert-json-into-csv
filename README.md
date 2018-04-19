@@ -1,5 +1,16 @@
 ## Convert JSON into CSV
 
+```
+  __      _______       ________       ____      __
+  \  \    \   ____\     \   ___  \     \    \    \  \
+   \  \    \  \          \  \  \  \     \  \  \   \  \
+    \  \    \  \_____     \  \  \  \     \  \\  \  \  \
+___  \  \    \______  \    \  \  \  \     \  \ \  \ \  \
+\  \  \  \          \  \    \  \  \  \     \  \  \  \\  \
+ \  \__\  \     _____\  \    \  \__\  \     \  \   \  \  \
+  \________\    \________\    \________\     \__\    \____\
+```
+
 It is a npm package with a function which receives a `JSON` object as a parameter and returns a `CSV` data to show in tabular form.
 
 ## New Features
