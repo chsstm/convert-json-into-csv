@@ -64,6 +64,7 @@ let json = {
         city: 'Khoptar -4, Rampur',
         country: 'Nepal'
     }
+    hobbies: ['Programming','Music','Sports']
 }
 
 csv = JsonToCsv(json,'-',"'",'.');
@@ -72,14 +73,21 @@ console.log(csv);
 
 #### Output (return value):
 ```
-'name'.'company'.'profession'.'address-city'.'address-country'
+'name'.'company'.'profession'.'address-city'.'address-country'.'hobbies'
 'Saimon Thada Magar'.'ChicMic, Mohali, India'.'Software Engineer'.'Khoptar -4, Rampur'.'Nepal'
+''.''.''.''.''.'Programming'
+''.''.''.''.''.'Music'
+''.''.''.''.''.'Sports'
 ```
 
 #### CSV Tabular View:
-name | company | profession | address_city | address_country
----- | ------- | ---------- | ------------ | ---------------
+name | company | profession | address_city | address_country | hobbies
+---- | ------- | ---------- | ------------ | --------------- |------
 Saimon Thada Magar | ChicMic, Mohali, India | Software Engineer | Khoptar -4, Rampur | Nepal
+ | | | | | Programming
+ | | | | | Music
+ | | | | | Sports
+
 
 ## Upcoming new Features 
 :soon: Custom column names instead of joined JSON keys.
