@@ -10,10 +10,10 @@ It is a npm package with a function which receives a `JSON` object as a paramete
 1. Run **npm install convert-json-into-csv** 
 
 ## Function Parameters
-1. **JSON object [Object:Required]** -> a JSON object which you want to convert.
-2. **Key Separator [String:Optional]** -> a symbol to separate the JSON key names of parent and child object. Default value is ` _ `.
-4. **Delimeter [String:Optional]** -> a symbol to wrap the CSV value. Default value is ` " `.
-3. **Value Separator [String:Optional]** -> a symbol to separate the diffent values of CSV. Default value is ` , `.
+1. **JSON object [Object:Required]** :- a JSON object which you want to convert to csv.
+2. **Key Separator [String:Optional]** :- a symbol to separate the JSON key names of parent and child object. Default value is ` _ `.
+4. **Delimeter [String:Optional]** :- a symbol to wrap the CSV value. Default value is ` " `.
+3. **Value Separator [String:Optional]** :- a symbol to separate the diffent values of CSV. Default value is ` , `.
 
 ## Use Method
 
