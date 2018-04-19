@@ -1,4 +1,4 @@
-export default JSONintoCSV = (json,keySeparator = '_',delimiter = delimiter,separator = ',') => {
+export default JSONintoCSV = (json,keyvalueSeparator = '_',delimiter = delimiter,valuevalueSeparator = ',') => {
     var plainData = {};
     var csv = ``;
 
@@ -10,7 +10,7 @@ export default JSONintoCSV = (json,keySeparator = '_',delimiter = delimiter,sepa
     let count = 0;
     //Writing column header with keys
     for(let key in plainData){
-        csv += delimiter+key+delimiter+ (count < cols-1? separator:'\n');
+        csv += delimiter+key+delimiter+ (count < cols-1? valueSeparator:'\n');
         count++;
     }
 
@@ -23,7 +23,7 @@ export default JSONintoCSV = (json,keySeparator = '_',delimiter = delimiter,sepa
             }else{
                 csv += delimiter+delimiter;
             }
-            csv += count < cols-1? separator:'\n';
+            csv += count < cols-1? valueSeparator:'\n';
             count++;
         }
     }
@@ -42,7 +42,7 @@ function parseInner(json,plainData,parentKey){
     let newData = plainData;
     for(let key in json){
         if(typeof(json[key]) === 'object'){
-            let newKey = parentKey? parentKey + keySeparator + key:key;
+            let newKey = parentKey? parentKey + keyvalueSeparator + key:key;
             if(!parentKey && Object.keys(json).length === 1){
                 newKey = null;
             }
@@ -76,7 +76,7 @@ function parseInner(json,plainData,parentKey){
             }
         }else{
             let value = json[key];
-            let newKey = parentKey? parentKey + keySeparator + key:key;
+            let newKey = parentKey? parentKey + keyvalueSeparator + key:key;
             if(newData.hasOwnProperty(newKey) ===  true){
                 newData[newKey].push(value);
             }else{
