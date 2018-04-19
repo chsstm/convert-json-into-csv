@@ -8,7 +8,7 @@ It is a npm package with a function which receives a `JSON` object as a paramete
 
 ## Setup process
 ```javascript
-npm install convert-json-into-csv
+npm install convert-json-into-csv --save
 ```
 
 ## Function Parameters
