@@ -84,9 +84,9 @@ console.log(csv);
 name | company | profession | address_city | address_country | hobbies
 ---- | ------- | ---------- | ------------ | --------------- |------
 Saimon Thada Magar | ChicMic, Mohali, India | Software Engineer | Khoptar -4, Rampur | Nepal
- | | | | | Programming
- | | | | | Music
- | | | | | Sports
+| | | | | | Programming
+| | | | | | Music
+| | | | | | Sports
 
 
 ## Upcoming new Features 
