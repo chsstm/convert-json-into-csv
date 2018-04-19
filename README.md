@@ -47,7 +47,7 @@ console.log(csv);
 #### CSV Tabular View:
 name | company | profession | address_city | address_country
 ---- | ------- | ---------- | ------------ | ---------------
-Saimon Thada Magar | ChicMic, Mohali, India | Software Engineer | Khoptar -4, Rampur","Nepal
+Saimon Thada Magar | ChicMic, Mohali, India | Software Engineer | Khoptar -4, Rampur | Nepal
 
 #### Example 2 :
 ```javascript
@@ -75,6 +75,11 @@ console.log(csv);
 'name'.'company'.'profession'.'address-city'.'address-country'
 'Saimon Thada Magar'.'ChicMic, Mohali, India'.'Software Engineer'.'Khoptar -4, Rampur'.'Nepal'
 ```
+
+#### CSV Tabular View:
+name | company | profession | address_city | address_country
+---- | ------- | ---------- | ------------ | ---------------
+Saimon Thada Magar | ChicMic, Mohali, India | Software Engineer | Khoptar -4, Rampur | Nepal
 
 ## Upcoming new Features 
 :soon: Custom column names instead of joined JSON keys.
