@@ -46,7 +46,7 @@ console.log(csv);
 
 #### CSV Tabular View:
 name | company | profession | address_city | address_country
-____ | _______ | __________ | ____________ | _______________
+---- | ------- | ---------- | ------------ | ---------------
 Saimon Thada Magar | ChicMic, Mohali, India | Software Engineer | Khoptar -4, Rampur","Nepal
 
 #### Example 2 :
