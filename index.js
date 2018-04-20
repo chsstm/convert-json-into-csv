@@ -1,4 +1,10 @@
-export default JSONintoCSV = (json,keySeparator = '_',delimiter = '"',valueSeparator = ',') => {
+export default class JSONintoCSV {
+    constructor(_json,_keySeparator = '_',_delimiter = '"',_valueSeparator = ','){
+        this.json = _json;
+        this.keySeparator = _keySeparator;
+        this.delimiter = _delimiter;
+    }
+
     var plainData = {};
     var csv = ``;
 
