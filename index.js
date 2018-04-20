@@ -1,33 +1,35 @@
-export default class JSONintoCSV {
-    plainData = {};
-    csv = ``;
-
-    constructor(_json, _keySeparator = '_', _delimiter = '"', _valueSeparator = ',') {
-        this.json = _json;
+class JSONintoCSV {
+    constructor(_keySeparator = '_', _delimiter = '"', _valueSeparator = ',') {
         this.keySeparator = _keySeparator;
         this.delimiter = _delimiter;
         this.valueSeparator = _valueSeparator;
+        this.plainData = {};
+        this.csv = ``;
     }
 }
 
-JSONintoCSV.parseCSV = () => {
-    this.parseInner(this.json);
+JSONintoCSV.prototype.parseCSV = (json) => {
+    this.parseInner(json);
+    this.writeHeader();
+    this.writeRows();
+
+    return this.csv;
 }
 
 //Get rows length
-JSONintoCSV.getRowLength = () => {
+JSONintoCSV.prototype.getRowLength = () => {
     for (let key in plainData) {
         return plainData[key].length;
     }
 }
 
 //Get columns length
-JSONintoCSV.getColLength = () => {
+JSONintoCSV.prototype.getColLength = () => {
     return Object.keys(this.plainData).length;
 }
 
 //Writing column header with keys
-JSONintoCSV.writeHeader = () => {
+JSONintoCSV.prototype.writeHeader = () => {
     let count = 0;
     for (let key in plainData) {
         csv += delimiter + key + delimiter + (count < cols - 1 ? valueSeparator : '\n');
@@ -36,7 +38,7 @@ JSONintoCSV.writeHeader = () => {
 }
 
 //Writing row data with values
-JSONintoCSV.writeRows = () => {
+JSONintoCSV.prototype.writeRows = () => {
     let rows = this.getRowLength();
     let cols = this.getColLength();
     for (let row = 0; row < rows; row++) {
@@ -53,7 +55,7 @@ JSONintoCSV.writeRows = () => {
     }
 }
 
-JSONintoCSV.parseInner = (json, parentKey) => {
+JSONintoCSV.prototype.parseInner = (json, parentKey) => {
     for (let key in json) {
         if (typeof (json[key]) === 'object') {
             this.parseNewObject(json, parent, key);
@@ -63,7 +65,7 @@ JSONintoCSV.parseInner = (json, parentKey) => {
     }
 }
 
-JSONintoCSV.parseNewObject = (json, parentKey, key) => {
+JSONintoCSV.prototype.parseNewObject = (json, parentKey, key) => {
     let newKey = parentKey ? parentKey + keySeparator + key : key;
     if (!parentKey && Object.keys(json).length === 1) {
         newKey = null;
@@ -98,7 +100,7 @@ JSONintoCSV.parseNewObject = (json, parentKey, key) => {
     }
 }
 
-JSONintoCSV.writeNewValue = (json, parentKey, key) => {
+JSONintoCSV.prototype.writeNewValue = (json, parentKey, key) => {
     let value = json[key];
     let newKey = parentKey ? parentKey + keySeparator + key : key;
     if (newData.hasOwnProperty(newKey) === true) {
@@ -123,3 +125,8 @@ JSONintoCSV.writeNewValue = (json, parentKey, key) => {
         }
     }
 }
+
+let parser = new JSONintoCSV();
+parser.parseCSV({
+    one: 1
+})
