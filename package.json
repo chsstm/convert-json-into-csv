@@ -7,9 +7,9 @@
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [
-    "json into csv",
-    "convert json into csv",
-    "csv from json"
+    "convert",
+    "csv",
+    "json"
   ],
   "author": "CHSSTM",
   "license": "MIT",
