@@ -76,14 +76,14 @@ console.log(csv);
 
 #### Output (return value):
 ```
-"name","company","profession","address_city","address_country"
-"Saimon Thada Magar","ChicMic, Mohali, India","Software Engineer","Khoptar -4, Rampur","Nepal"
+"name","email","address_city","address_country"
+"Saimon Thada Magar","xyz@abc.com","Khoptar -4, Rampur","Nepal"
 ```
 
 #### CSV Tabular View:
-name | company | profession | address_city | address_country
+name | email | address_city | address_country
 ---- | ------- | ---------- | ------------ | ---------------
-Saimon Thada Magar | ChicMic, Mohali, India | Software Engineer | Khoptar -4, Rampur | Nepal
+Saimon Thada Magar | xyz@abc.com | Khoptar -4, Rampur | Nepal
 
 #### Example 2 :
 ```javascript
@@ -94,8 +94,7 @@ const JsonToCsv = require('convert-json-into-csv'); //ES5
 let csv = ``;
 let json = {
     name: 'Saimon Thada Magar',
-    company: 'ChicMic, Mohali, India',
-    profession: 'Software Engineer',
+    email: 'xyz@abc.com',
     address: {
         city: 'Khoptar -4, Rampur',
         country: 'Nepal'
@@ -109,16 +108,16 @@ console.log(csv);
 
 #### Output (return value):
 ```
-'name'.'company'.'profession'.'address-city'.'address-country'.'hobbies'
-'Saimon Thada Magar'.'ChicMic, Mohali, India'.'Software Engineer'.'Khoptar -4, Rampur'.'Nepal'.'Programming'
+'name'.'email'.'address-city'.'address-country'.'hobbies'
+'Saimon Thada Magar'.'xyz@abc.com'.'Khoptar -4, Rampur'.'Nepal'.'Programming'
 ''.''.''.''.''.'Music'
 ''.''.''.''.''.'Sports'
 ```
 
 #### CSV Tabular View:
-name | company | profession | address_city | address_country | hobbies
+name | email | address_city | address_country | hobbies
 ---- | ------- | ---------- | ------------ | --------------- |------
-Saimon Thada Magar | ChicMic, Mohali, India | Software Engineer | Khoptar -4, Rampur | Nepal | Programming
+Saimon Thada Magar | xyz@abc.com | Khoptar -4, Rampur | Nepal | Programming
 | | | | | | Music
 | | | | | | Sports
 
