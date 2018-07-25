@@ -82,7 +82,7 @@ console.log(csv);
 
 #### CSV Tabular View:
 name | email | address_city | address_country
----- | ------- | ---------- | ------------ | ---------------
+---- | ----- | ------------ | ---------------
 Saimon Thada Magar | xyz@abc.com | Khoptar -4, Rampur | Nepal
 
 #### Example 2 :
@@ -110,16 +110,16 @@ console.log(csv);
 ```
 'name'.'email'.'address-city'.'address-country'.'hobbies'
 'Saimon Thada Magar'.'xyz@abc.com'.'Khoptar -4, Rampur'.'Nepal'.'Programming'
-''.''.''.''.''.'Music'
-''.''.''.''.''.'Sports'
+''.''.''.''.'Music'
+''.''.''.''.'Sports'
 ```
 
 #### CSV Tabular View:
 name | email | address_city | address_country | hobbies
----- | ------- | ---------- | ------------ | --------------- |------
+---- | ----- | ------------ | --------------- | ------
 Saimon Thada Magar | xyz@abc.com | Khoptar -4, Rampur | Nepal | Programming
-| | | | | | Music
-| | | | | | Sports
+| | | | | Music
+| | | | | Sports
 
 
 ## Upcoming new Features 
