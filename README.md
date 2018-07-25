@@ -62,8 +62,7 @@ const JsonToCsv = require('convert-json-into-csv'); //ES5
 let csv = ``;
 let json = {
     name: 'Saimon Thada Magar',
-    company: 'ChicMic, Mohali, India',
-    profession: 'Software Engineer',
+    email: 'xyz@abc.com',
     address: {
         city: 'Khoptar -4, Rampur',
         country: 'Nepal'
