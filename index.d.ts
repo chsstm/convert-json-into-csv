@@ -1,1 +1,3 @@
-export default function JSONintoCSV(json: JSON, keySeparator: string, delimiter: string, valueSeparator: string) { };
+export function JSONintoCSV(json: JSON, keySeparator: string, delimiter: string, valueSeparator: string) { };
+
+export default JSONintoCSV;

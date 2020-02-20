@@ -1,4 +1,4 @@
-export default JSONintoCSV = (json,keySeparator = '_',delimiter = '"',valueSeparator = ',') => {
+export const JSONintoCSV = (json,keySeparator = '_',delimiter = '"',valueSeparator = ',') => {
     var plainData = {};
     var csv = ``;
 
@@ -102,3 +102,5 @@ function parseInner(json,keySeparator,plainData,parentKey){
     }
     return plainData;
 }
+
+export default JSONintoCSV;
