@@ -1,5 +1,5 @@
 ## Convert JSON into CSV
-
+[![npm version](https://badge.fury.io/js/convert-json-into-csv.svg)](https://badge.fury.io/js/convert-json-into-csv)
 ```
      ___     _________      __________      _____     ___
     /\  \   /\   _____\    /\   ____  \    /\    \   /\  \
